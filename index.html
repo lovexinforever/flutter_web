@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @Author: yang.ding
+ * @version: 
+ * @Date: 2021-05-06 12:47:32
+ * @LastEditors: yang.ding
+ * @LastEditTime: 2021-05-07 09:39:07
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,13 +29,13 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="flutter_web">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="flutter_web/icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="flutter_web/image/png" href="favicon.png"/>
 
   <title>flutter_web</title>
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="flutter_web/manifest.json">
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -36,10 +44,10 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=4044509047');
+        navigator.serviceWorker.register('flutter_web/flutter_service_worker.js?v=4044509047');
       });
     }
   </script>
-  <script src="main.dart.js" type="application/javascript"></script>
+  <script src="flutter_web/main.dart.js" type="application/javascript"></script>
 </body>
 </html>
